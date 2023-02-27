@@ -1,3 +1,21 @@
+*{padding: 0;
+margin: 0;}
+
+.logo{
+  width: 100px;
+  height: auto;
+  padding: 3px;
+  
+ 
+
+}
+
+
+
+.logo:hover{
+  width:103px;
+}
+
 .contenedor{
     
     display: flex;
@@ -6,7 +24,8 @@
     background-image:url(image/herocoop.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    justify-content: center;
+    background-position: center center;
+    justify-content: center ;
     align-items: center;
     padding-top: 20%;
     padding-bottom: 20%;
@@ -15,12 +34,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    flex-direction: row;
+    padding: ;
+    margin: 3%;
+    width: 100%;
+    height: min-content;
+   
 }
 
 .contenedor2{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: min-content;
 }
 .texto1, .imagen1, .texto2, .imagen2 {
     padding: 3%;
@@ -33,10 +61,20 @@
 }
 
 img{
-    width: 60%;
+    width: 40%;
     height: auto;
 }
 
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+p{
+  padding: 1%;
+  font-size: 1rem;
+}
 
 
 
@@ -99,5 +137,99 @@ img{
     }
   }
   
+  @media screen and (max-width: 991px){
+    h2{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 0.9rem;
+    }
+        
+    }
+    .cartas{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      
+    }
 
+    .card1 {
+      background-image: url(image/obre.png);
+      background-position: center center;
+      background-size: cover;
+      
+      justify-content: center;
+      align-items: center;
 
+      padding: 5%;
+      margin: 10px;
+      width: 20%;
+      height: 20%;
+      display: inline-block;
+      position: relative; /* Agrega la propiedad position con valor relative */
+      border-radius: 3%;
+
+    }
+
+    .dropdown-space{
+      margin-top: 10px;
+
+    }
+
+    .dropdown-item:hover{
+      background-color: rgba(132, 255, 194, 0.24) ;
+    }
+
+    .card2 {
+      background-image: url(image/obre2.png);
+      background-position: center center;
+      background-size: cover;
+      
+    
+      padding: 5%;
+      margin: 10px;
+      width: 20%;
+      height: auto;
+      display: inline-block;
+      position: relative; /* Agrega la propiedad position con valor relative */
+    }
+    
+
+    .card3 {
+      background-image: url(image/obre3.png);
+      background-position: center center;
+      background-size: cover;
+      ;
+    
+      padding: 5%;
+      margin: 10px;
+      width: 20%;
+      height: auto;
+      display: inline-block;
+      position: relative; /* Agrega la propiedad position con valor relative */
+    }
+    
+    
+    .card img {
+      
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute; /* Agrega la propiedad position con valor absolute */
+      top: 0; /* Ajusta la posición de la imagen */
+      left: 0; /* Ajusta la posición de la imagen */
+    }
+    
+    .card h3,
+    .card p {
+      position: absolute; /* Agrega la propiedad position con valor absolute */
+      z-index: 1; /* Ajusta la propiedad z-index para colocar el texto sobre la imagen */
+      width: 100%; /* Ajusta el ancho del texto al ancho de la carta */
+      text-align: center; /* Alinea el texto al centro */
+    }
+
+    .desaparece{
+      display: none;
+    }
+
+    
