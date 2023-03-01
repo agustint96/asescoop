@@ -8,9 +8,11 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <script src="typed.min.js"></script>
 </head>
 <body>
 
+  
   <div class="primercontenedor">
   <nav class="navbar sticky-top  navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid ">
@@ -24,11 +26,11 @@
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Servicios
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Servicios
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Legis. 20337 <br> Estatutos Sociales </a></li>
+              <li><a class="dropdown-item" href="#titulo1">Legis. 20337 <br> Estatutos Sociales </a></li>
               <li><a class="dropdown-item dropdown-space" href="#">Concejo de Administración</a></li>
               <li><a class="dropdown-item" href="#">Sindicatura</a></li>
               <li><a class="dropdown-item" href="#">Asociados</a></li>
@@ -49,13 +51,15 @@
     <div class="contenedor">
       <div class="wrap">
         <div class="box">
-        <h1>Título del contenido</h1>
+        <div class="fuente"><h1 >Asesoramiento integral a <span id="typed-text"></span></h1></div>
+        
+        
         </div>
     </div>
     </div>
   </div>
     <div class="contenedortitulo1">
-      <h2 class="titulo1">Primer Subtitulo</h2>
+      <h2 class="titulo1" id="titulo1">Primer Subtitulo</h2>
     </div>
         <div class="row contenedor1">
             <div class="sm texto1 col-lg-6 order-lg-1 order-1">
@@ -118,6 +122,16 @@
 
     
 
+
+<!-- Script typed.js -->
+<script> var typed = new Typed('#typed-text', {
+  strings: ['Cooperativas', 'Concejo de Administración', 'Síndicos', 'Asociados'],
+  typeSpeed: 40,
+  backSpeed: 40,
+  loop: true,
+  showCursor:false,
+});
+</script>
 
 
 <!-- Bootstrap-->    
