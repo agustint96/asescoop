@@ -45,11 +45,7 @@
     .navbar-container {
       box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.69);
     }
-    body{
-      background-image: url(image/pexelsfondo.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+    
     .container-fluid{
       background-image: url(image/pexelsfondo.jpg);
       background-size: cover;
@@ -71,19 +67,20 @@
     .navbar-nav li {
       margin: 5px 0;
     }
+
+    .nav-item{
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+    
     .nav-link{
-        background-image: linear-gradient(to right, #ffffff, #ffffff); /* establecer una imagen de gradiente de color azul */
-        background-position: bottom left; /* establecer la posición de la imagen en la parte inferior izquierda del enlace */
-        background-repeat: no-repeat; /* evitar que la imagen se repita */
-        background-size: 0% 2px; /* establecer el tamaño inicial de la imagen en 0% de ancho y 2 píxeles de altura */
-        transition: background-size 0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de tamaño de la imagen */
-        transition-delay: 0.1s; /* agregar un retraso de 0,5 segundos antes de que se inicie la transición */
+        background-image: none;
+
+       /* agregar un retraso de 0,5 segundos antes de que se inicie la transición */
       }
     .nav-link-custom:hover {
           
-          transition:  0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de color del borde inferior */
-          transition-delay: 0.1s;
-          background-size: 16% 2px; /* cambiar el tamaño de la imagen a 100% de ancho y 2 píxeles de altura cuando se hace hover */
+         
         }
     .dropdown-menu{
       
@@ -113,7 +110,11 @@
     .dropdown-item-letter:hover{
       color: white;
     }
+   
     .nav-link:hover{
+      color: white;
+    }
+    .nav-link:visited{
       color: white;
     }
     .servicios-color{
