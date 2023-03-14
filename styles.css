@@ -1,250 +1,200 @@
-*{padding: 0;
-  scroll-behavior: smooth;
-margin: 0;}
-
-.logo{
-  width: 100px;
-  height: auto;
-  padding: 3px;
-  
- 
-
+/************ Propiedades al navbar ****************/ 
+.navbar-container, .dropdown-menu {
+  box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.69);
 }
+.navbar {
 
-h1{
-  padding: 3%;
-  font-size: 3rem;
-}
-
-.fuente{
-  text-shadow: 1px 3px 4px black;
-  font-size: 0.1rem;
-}
-
-.box{
-  margin: 3%;
-  color: rgb(255, 255, 255);
-  
-}
-
-
-
-.logo:hover{
-  width:103px;
-}
-
-.contenedor{
-    
     display: flex;
-    width: auto;
-    min-height: 100vh;
-    background-image: url(image/herocoop.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    
-    justify-content: center ;
-    align-items: center;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-.contenedor1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    flex-direction: row;
-    padding: ;
-    margin: 3%;
-    width: 100%;
-    height: min-content;
-   
-}
-
-.contenedor2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: min-content;
-}
-.texto1, .imagen1, .texto2, .imagen2 {
-    padding: 3%;
-}
-.contenedortitulo1{
-    padding: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-img{
-    width: 40%;
-    height: auto;
-}
-
-
-h2{
-  font-size: 2rem;
-}
-p{
-  padding: 1%;
-  font-size: 1rem;
-}
-
-
-
-.slide-left {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.slide-right {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-
-
-/**
- * ----------------------------------------
- * animation slide-left
- * ----------------------------------------
- */
- @-webkit-keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
+    justify-content: space-between;
   }
-  @keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
+.navbar-brand {
+  margin-right: auto;
+} 
+.navbar-brand img{
+  width: 80px;
+}
+.navbar-nav {
+    margin-left: 60%;
+}
+.nav-item{
+    margin: 0 10% 0 10%;
+}
+.nav-link{
+  background-image: linear-gradient(to right, #0353ac, #0353ac); /* establecer una imagen de gradiente de color azul */
+  background-position: bottom left; /* establecer la posición de la imagen en la parte inferior izquierda del enlace */
+  background-repeat: no-repeat; /* evitar que la imagen se repita */
+  background-size: 0% 2px; /* establecer el tamaño inicial de la imagen en 0% de ancho y 2 píxeles de altura */
+  transition: background-size 0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de tamaño de la imagen */
+  transition-delay: 0.1s; /* agregar un retraso de 0,5 segundos antes de que se inicie la transición */
+}
+.nav-link-custom:hover {
+    transition:  0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de color del borde inferior */
+    transition-delay: 0.1s;
+    background-size: 100% 2px; /* cambiar el tamaño de la imagen a 100% de ancho y 2 píxeles de altura cuando se hace hover */
+  }
+  .dropdown-item:hover{
+    background-color: #0353ac2d;
+  }
+  .dropdown-item-letter{
+    color: rgba(0, 0, 0, 0.604);
   }
 
-  @-webkit-keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+  /*********************************** MEDIAQUERIES*********************************************************/
+
+  @media (max-width: 992px) {
+    .navbar-container {
+      box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.69);
     }
-    100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
+    body{
+      background-image: url(image/pexelsfondo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
-  }
-  @keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+    .container-fluid{
+      background-image: url(image/pexelsfondo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
-    100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
+    .navbar {
+      padding: 0;
+      flex-wrap: wrap;
     }
-  }
-  
-  @media screen and (max-width: 991px){
-    h2{
-      font-size: 2rem;
+    .navbar-brand {
+      margin-right: 0;
+      margin-bottom: 10px;
     }
-    p{
-      font-size: 0.9rem;
-    }
-        
-    }
-    .cartas{
+    .navbar-nav {
+      margin-left: 0;
       display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
+    }
+    .navbar-nav li {
+      margin: 5px 0;
+    }
+    .nav-link{
+        background-image: linear-gradient(to right, #ffffff, #ffffff); /* establecer una imagen de gradiente de color azul */
+        background-position: bottom left; /* establecer la posición de la imagen en la parte inferior izquierda del enlace */
+        background-repeat: no-repeat; /* evitar que la imagen se repita */
+        background-size: 0% 2px; /* establecer el tamaño inicial de la imagen en 0% de ancho y 2 píxeles de altura */
+        transition: background-size 0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de tamaño de la imagen */
+        transition-delay: 0.1s; /* agregar un retraso de 0,5 segundos antes de que se inicie la transición */
+      }
+    .nav-link-custom:hover {
+          
+          transition:  0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de color del borde inferior */
+          transition-delay: 0.1s;
+          background-size: 16% 2px; /* cambiar el tamaño de la imagen a 100% de ancho y 2 píxeles de altura cuando se hace hover */
+        }
+    .dropdown-menu{
       
+      background-color: rgba(0, 0, 0, 0.192);
     }
-
-    .card1 {
-      background-image: url(image/obre.png);
-      background-position: center center;
-      background-size: cover;
+    .dropdown-toggle{
+      filter: brightness(100);
+    }
+    .dropdown-toggle:hover{
+      filter: brightness(100);
+    }
+    .dropdown-toggle::after {
+      color: white;
+    }
+    .dropdown-toggle:visited{
+      filter: brightness(100);
+    }
+    .nav-link{
       
-      justify-content: center;
-      align-items: center;
-
-      padding: 5%;
-      margin: 10px;
-      width: 20%;
-      height: 20%;
-      display: inline-block;
-      position: relative; /* Agrega la propiedad position con valor relative */
-      border-radius: 3%;
-
+      color: rgba(245, 245, 245, 0.753);
     }
-
-    .dropdown-space{
-      margin-top: 10px;
-
-    }
-
-    .dropdown-item:hover{
-      background-color: rgba(132, 255, 194, 0.24) ;
-    }
-
-    .card2 {
-      background-image: url(image/obre2.png);
-      background-position: center center;
-      background-size: cover;
+    .dropdown-item-letter {
+      font-size: 0.9rem;
       
-    
-      padding: 5%;
-      margin: 10px;
-      width: 20%;
-      height: auto;
-      display: inline-block;
-      position: relative; /* Agrega la propiedad position con valor relative */
+      color: rgba(245, 245, 245, 0.753);
     }
-    
+    .dropdown-item-letter:hover{
+      color: white;
+    }
+    .nav-link:hover{
+      color: white;
+    }
+    .servicios-color{
+      color:rgba(245, 245, 245, 0.753); 
+    }
+    .servicios-color:hover{
+      color: white;
+    }
+    .navbar-toggler{
+      width: 20px;
+      height: 20px;
+      position: relative;
+      transition: 0.5 ease-in-out;
+    }
+    .navbar-toggler,
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon{
+      outline: none;
+      box-shadow: none;
+      border: 0;
+    }
+    .navbar-toggler span{
+      margin: 0;
+      padding: 0;
+    }
+    .toggler-icon{
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 90%;
+      background: rgba(245, 245, 245, 0.753);
+      border-radius: 1px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+    }
+    .toggler-icon:hover{
+      background: white;
+    }
+    .middle-bar{
+      margin-top: 0px;
 
-    .card3 {
-      background-image: url(image/obre3.png);
-      background-position: center center;
-      background-size: cover;
-      ;
-    
-      padding: 5%;
-      margin: 10px;
-      width: 20%;
-      height: auto;
-      display: inline-block;
-      position: relative; /* Agrega la propiedad position con valor relative */
     }
-    
-    
-    .card img {
-      
-      max-width: 100%;
-      max-height: 100%;
-      position: absolute; /* Agrega la propiedad position con valor absolute */
-      top: 0; /* Ajusta la posición de la imagen */
-      left: 0; /* Ajusta la posición de la imagen */
+    .navbar-toggler .top-bar{
+      margin-top: 0px;
+      transform: rotate(135deg);
     }
-    
-    .card h3,
-    .card p {
-      position: absolute; /* Agrega la propiedad position con valor absolute */
-      z-index: 1; /* Ajusta la propiedad z-index para colocar el texto sobre la imagen */
-      width: 100%; /* Ajusta el ancho del texto al ancho de la carta */
-      text-align: center; /* Alinea el texto al centro */
+    .navbar-toggler .middle-bar{
+      opacity: 0;
+      filter: alpha(opacity=0);
     }
+    .navbar-toggler .bottom-bar{
+      margin-top: 0px;
+      transform: rotate(-135deg);
 
-    .desaparece{
+    }
+  /************** Cuando no esta clickeado *******************/
+  .navbar-toggler.collapsed .top-bar{
+    margin-top: -16px;
+    transform: rotate(0deg);
+
+  }
+  .navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    
+  }
+  .navbar-toggler.collapsed .bottom-bar{
+    margin-top: 16px;
+    transform: rotate(0deg);
+  }  
+}
+  @media only screen and (max-width: 992px) {
+    #imagen1 {
       display: none;
     }
-
-    
+  }
+  @media only screen and (min-width: 993px) {
+    #imagen2 {
+      display: none;
+    }
+  }
